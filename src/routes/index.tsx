@@ -141,7 +141,7 @@ function WeddingInvitation() {
           <span className="envelope-liner absolute inset-0" />
           <span className="envelope-edge absolute inset-x-0 top-0 h-px" />
         </span>
-        <span className="invitation-card absolute inset-x-[7%] bottom-[7%] z-20 flex aspect-[4/5] flex-col items-center overflow-hidden border border-primary/15 bg-card px-5 pt-5 text-center shadow-xl">
+        <span className="invitation-card absolute inset-x-[8%] bottom-[4%] z-20 flex h-[calc(68%+11px)] flex-col items-center overflow-hidden border border-primary/15 bg-card px-5 pt-4 text-center shadow-xl">
           <span className="card-glint absolute inset-y-0 -left-1/3 w-1/3" />
           <span className="text-[8px] uppercase tracking-[.24em] text-muted-foreground">Trân trọng báo tin vui</span>
           <span className="mt-3 font-display text-[2.35rem] leading-none">Thảo My</span>

@@ -184,8 +184,8 @@
 }
 
 @keyframes cardRise {
-  0%, 9% { transform: translate3d(0,48%,0) rotate(-.35deg); }
-  17% { transform: translate3d(0,46%,0) rotate(-.55deg); }
+  0%, 9% { transform: translate3d(0,0,0) rotate(-.35deg); }
+  17% { transform: translate3d(0,1.5%,0) rotate(-.55deg); }
   61% { transform: translate3d(0,-50%,0) rotate(.35deg); }
   72% { transform: translate3d(0,-54%,0) rotate(-.12deg); }
   82% { transform: translate3d(0,-53%,0) rotate(0deg); opacity: 1; }
@@ -296,7 +296,7 @@
 }
 
 @utility invitation-card {
-  transform: translateY(48%) rotate(-.5deg) scale(.96);
+  transform: rotate(-.5deg);
   will-change: transform;
 }
 @utility cover-aura { opacity: 0; background: radial-gradient(circle, color-mix(in oklab, var(--secondary) 65%, transparent), transparent 62%); }
