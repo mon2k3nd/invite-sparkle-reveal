@@ -184,8 +184,9 @@
 }
 
 @keyframes cardRise {
-  0% { transform: translateY(48%) rotate(-.5deg) scale(.96); filter: blur(0); opacity: 1; }
-  38% { transform: translateY(-40%) rotate(.4deg) scale(1.01); }
+  0% { transform: translateY(48%) rotate(-.5deg) scale(.96); clip-path: inset(0 0 43% 0); filter: blur(0); opacity: 1; }
+  18% { clip-path: inset(0 0 43% 0); }
+  38% { transform: translateY(-40%) rotate(.4deg) scale(1.01); clip-path: inset(0); }
   68% { transform: translateY(-34%) rotate(0deg) scale(1.1); opacity: 1; filter: blur(0); }
   100% { transform: translateY(-30%) rotate(0deg) scale(2.55); opacity: 0; filter: blur(14px); }
 }
@@ -290,7 +291,10 @@
   transition: transform 1.15s cubic-bezier(.2,.72,.15,1), z-index 0s 1.45s;
 }
 
-@utility invitation-card { transform: translateY(48%) rotate(-.5deg) scale(.96); }
+@utility invitation-card {
+  transform: translateY(48%) rotate(-.5deg) scale(.96);
+  clip-path: inset(0 0 43% 0);
+}
 @utility cover-aura { opacity: 0; background: radial-gradient(circle, color-mix(in oklab, var(--secondary) 65%, transparent), transparent 62%); }
 @utility scroll-hint { & i { display: block; width: 1px; height: 100%; background: currentColor; animation: scrollHint 2.4s cubic-bezier(.65,0,.35,1) infinite; } }
 @utility reveal {
