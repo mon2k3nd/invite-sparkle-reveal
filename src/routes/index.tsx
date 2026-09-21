@@ -101,7 +101,7 @@ function WeddingInvitation() {
     if (opening) return;
     setOpening(true);
     try { await audioRef.current?.play(); setPlaying(true); } catch { setPlaying(false); }
-    window.setTimeout(() => setOpened(true), 3300);
+    window.setTimeout(() => setOpened(true), 2850);
   }
   async function toggleMusic() {
     if (!audioRef.current) return;
